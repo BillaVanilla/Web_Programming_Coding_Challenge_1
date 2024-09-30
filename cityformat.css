@@ -1,5 +1,21 @@
 body 
 {  
-    background-image: url("(background image goes here");
-	
+    background-image: url("Atlanta Skyline.png");
+}
+.Title_Animated{
+	font: 48pt Copperplate;
+	display: flex;
+}
+.Title_Animated span{
+	display: inline-block;
+	animation: loopTitle 2s infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframe loopTitle{
+	0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+	}
 }
