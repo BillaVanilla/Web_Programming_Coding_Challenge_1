@@ -1,45 +1,30 @@
-body 
-{  
-    background-image: url("Atlanta Skyline.png");
-}
-.Title_Animated{
-	font: 48pt Copperplate;
-	background: linear-gradient(to top, red, yellow, red);
-	 -webkit-background-clip: text;
-	 background-clip: text;
-}
-.Title_Animated span{
-	display: inline-block;
-	animation: loopTitle 2s infinite;
-    animation-delay: calc(0.1s * var(--i));
-    text-align: center;
-}
-@keyframes loopTitle{
-	0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-	}
-}
-
-.Hellcat {
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    animation: bouncing 0.5s infinite;
-	top: 400px;
-	left: 300px;
-}
-
-@keyframes bouncing {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateX(0) scale(1,1);
-    }
-    40% {
-        transform: translateX(-150px) scale(1.5,0.5);
-    }
-    60% {
-        transform: translateX(-75px) scale(0.5,1.5);
-    }
-}
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="cityformat.css" />
+</head>
+<title>City_Infographic</title>
+<body>
+	<div class = "Title_Animated">
+		<span style="--i:1">W</span>
+        <span style="--i:2">E</span>
+        <span style="--i:3">L</span>
+        <span style="--i:4">C</span>
+        <span style="--i:5">O</span>
+        <span style="--i:6">M</span>
+        <span style="--i:7">E</span>
+		<span style="--i:7"> </span>
+        <span style="--i:9">T</span>
+        <span style="--i:10">O</span>
+		<span style="--i:11"> </span>
+		<span style="--i:12">A</span>
+		<span style="--i:13">T</span>
+		<span style="--i:14">L</span>
+		<span style="--i:15">A</span>
+		<span style="--i:16">N</span>
+		<span style="--i:17">T</span>
+		<span style="--i:18">A</span>
+	</div>
+	<img src = "hellcat.png" alt = "hellcat" class = "Hellcat">
+</body>
+</html>
