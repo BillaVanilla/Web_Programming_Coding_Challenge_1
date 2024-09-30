@@ -12,6 +12,29 @@ body
     animation-delay: calc(0.1s * var(--i));
     text-align: center;
 }
+#waff{
+    position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+    
+}
+
+#person{
+    width: 150;
+    height: 150;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 1px; 
+}
+
+#train{
+    width: 400;
+    height: 150;
+    float: right;
+}
+
 @keyframes loopTitle{
 	0%, 100% {
         transform: translateY(0);
