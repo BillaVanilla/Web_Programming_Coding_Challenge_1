@@ -10,8 +10,9 @@ body
 	display: inline-block;
 	animation: loopTitle 2s infinite;
     animation-delay: calc(0.1s * var(--i));
+    text-align: center;
 }
-@keyframe loopTitle{
+@keyframes loopTitle{
 	0%, 100% {
         transform: translateY(0);
     }
